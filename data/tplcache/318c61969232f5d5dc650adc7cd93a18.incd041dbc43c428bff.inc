@@ -1,8 +1,0 @@
-<?php
-$z[0]=Array("array","@me = (empty(@me['litpic']) ? \"\" : \"<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>\"); ",5,159);
-$z[0][4]['runphp']="yes";
-$z[1]=Array("arcurl","",175,190);
-$z[2]=Array("title","",206,220);
-$z[3]=Array("description","",249,269);
-
-?>
