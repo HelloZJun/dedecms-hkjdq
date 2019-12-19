@@ -1,0 +1,7 @@
+INSERT INTO `dede_search_keywords` VALUES('1','as','as','14','0','1557596980','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','悍客','悍客','1','0','1539402849','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','dddd','dddd','1','0','1539409802','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','同期继电器','同期继电器 继电器 同期','2','0','1575789615','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','test','test','1','0','1551865272','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','www.ymwears.cn','www.ymwears.cn www.ymwears.cn','1','0','1576484011','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','dfsaf','dfsaf','1','0','1576579671','0','0');
