@@ -1,0 +1,45 @@
+{dede:include filename="head.htm"/}
+<div id="main">
+<div id="ck">{dede:include filename="article_left.htm"/}</div>
+<div id="nk">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="40">&nbsp;</td>
+</tr>
+<tr>
+<td><div id="nbt">{dede:field name='typename'/}</div><div id="more">µ±«∞Œª÷√:{dede:field name='position'/}</div></td>
+</tr>
+<tr>
+<td height="2" bgcolor="#78a22f"></td>
+</tr>
+<tr>
+<td height="20"></td>
+</tr>
+<tr>
+<td>
+<div class="listbox">
+			<ul class="e81">
+           {dede:list pagesize='8'}
+				<li>
+					<a href="[field:arcurl/]" class="pic"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a>
+					<a href="[field:arcurl/]" class="title">[field:title/]</a></li>
+          {/dede:list}
+			</ul>
+		</div>
+        <!-- /listbox -->
+		<div class="dede_pages">
+			<ul class="pagelist">
+				{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+			</ul>
+		</div>
+  <!-- /pages -->
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+{dede:include filename="foot.htm"/}
+<!-- /footer -->
+
+

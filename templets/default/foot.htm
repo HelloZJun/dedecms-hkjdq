@@ -1,0 +1,45 @@
+<!-- //底部模板 -->
+<div id="quality" class="wow fadeInUp">
+  <div class="container">
+    <li class='q1'><a style='background:url({dede:global.cfg_templets_skin/}/skin/images/20178161126509.jpg) no-repeat left center;'>投诉与建议</a></li>
+    <li class='q2'><a style='background:url({dede:global.cfg_templets_skin/}/skin/images/201781611241603.jpg) no-repeat left center;'>产品维修</a></li>
+    <li class='q3'><a style='background:url({dede:global.cfg_templets_skin/}/skin/images/201781611318761.jpg) no-repeat left center;'>商务支持</a></li>
+    <li class='q4'><a style='background:url({dede:global.cfg_templets_skin/}/skin/images/201781611420980.jpg) no-repeat left center;'>质量与服务承诺</a></li>
+  </div>
+</div>
+<!-- 质量保证 end -->
+<div class="clear"></div>
+<footer id="footer">
+  <div class="container">
+    <div id="help"> {dede:channelartlist typeid='1,2,3'}
+      <div class="help_list wow fadeInUp" >
+        <div class="help_top"><h3>{dede:field name='typename'/}</h3><span></span></div>
+        <ul>
+          {dede:channel type='son' noself='yes'}
+          <li><a href='[field:typeurl/]' title="[field:typename/]">[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+      </div>
+      {/dede:channelartlist}
+      <div class="help_list wow fadeInUp" >
+        <div class="help_top">
+          <h3>客户服务</h3>
+          <span></span></div>
+        <div class="help_con">全国统一服务热线：<span>{dede:global.cfg_tel/}</span></div>
+      </div>
+      <div class="help_list wow fadeInUp" >
+        <div class="wechat"><img src='{dede:global.cfg_templets_skin/}/skin/images/201799171354253.jpg' width='205' height='100' alt=''></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="link" class="wow fadeInUp">
+      <div class="link_top">友情链接：</div>
+      <div class="link_con">
+        <li>{dede:flink titlelen='20' row='20' type='text'}  [field:link /]  {/dede:flink}</li>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="copy_txt" class="wow fadeInUp">Copyrigh &copy; 悍客电气（上海）有限公司 版权所有  技术支持：<a href="http;//www.ahxykj.net" target="_blank">炫乐科技</a></div>
+  </div>
+</footer>
+<!-- //底部模板 -->

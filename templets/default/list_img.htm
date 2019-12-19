@@ -1,0 +1,47 @@
+{dede:include filename="head.htm"/}
+
+<div class="clear"></div>
+<div id="banner"></div>
+<div class="clear"></div>
+<!--内容区开始-->
+<div class="main">
+  <div class="container">
+    <div class="main_top"><span>当前位置：</span>
+      <ul>
+        <li>{dede:field name='position'/}</li>
+      </ul>
+      <div class="span2"></div>
+    </div>
+    {dede:include filename="left.htm"/}
+    <div id="right">
+      <div id="right_top">
+        <h3><a href='{dede:field name='typeurl'/}' target="_blank">{dede:field name='typename'/}</a></h3>
+      </div>
+      <div id="right_con">
+        <div class="row">
+          <div class="productList"> {dede:list pagesize ='8'}
+            <div class="pro_list wow fadeInUp" data-wow-delay=".2s">
+              <div class="pro_item pro_list2">
+                <div class="pro_item_img" style="background-image:url([field:picname/]);"></div>
+                <div class="pro_item_title">
+                  <h3><a href='[field:arcurl/]' target="_blank">[field:title/]</a></h3>
+                  <h4>[field:description function="cn_substr(@me,60)"/]...</h4>
+                </div>
+              </div>
+            </div>
+            {/dede:list} </div>
+          <div class="blank clear"></div>
+          <div class="pages">{dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--内容区结束-->
+<div class="clear"></div>
+
+{dede:include filename="foot.htm"/}
+<!-- /footer -->
+
+</body>
+</html>

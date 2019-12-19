@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}"/>
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/main.css" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/new.css" type="text/css" />
+
+<link href="{dede:global.cfg_templets_skin/}/skin/css/style.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/skin/js/jquery.min.js"></script>
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+<link href="{dede:global.cfg_templets_skin/}/skin/css/animate.min.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/skin/js/wow.min.js"></script>
+<!--<![endif]-->
+
+</head>
+
+<div id="header">
+<div id="top">
+    <div class="container">
+      <div class="top_left"> <span>欢迎致电：021-37580627</span> <span>服务时间：{dede:global.cfg_shijian/}</span> </div>
+      <div class="top_right"> <span class="span1">微信公众号
+        <div class="span2 wow bounceInDown"><img src='/skin/images/erweima.png' width='100' height='100' alt=''></div>
+        </span> <span class="span3">网站导航
+        <div class="sitemap"> {dede:channelartlist typeid='top'}
+          <div class="sitemap_item">
+            <div class="sitemap_title"><a href='{dede:field name='typeurl'/}' title='{dede:field name='typename'/}'>{dede:field name='typename'/}</a></div>
+            <ul>
+              {dede:channel type='son' noself='yes'}
+              <li><a href='[field:typeurl/]' title="[field:typename/]">[field:typename/]</a></li>
+              {/dede:channel}
+            </ul>
+          </div>
+          {/dede:channelartlist} </div>
+        </span>
+        <div id="search" class="wow fadeInUp">
+          <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+            <input type="hidden" name="kwtype" value="0" />
+            <input name="q" value="" class="skw" size="12" onFocus="javascript:clearsearch(this);" onBlur="javascript:redosearch(this);"  />
+            <input name="submit" value="" type="submit" class="sub" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+  
+<div class="w_h1_bj clearb">
+  <div class="w_h"><div class="w_t1"></div></div>
+  <div id="wrap">
+      <ul id="nav">
+        <li> {dede:type typeid='1'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='1'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li> 
+        <li class="w_dq"><a href="/" title="首页" >悍客首页</a></li>
+        <li> {dede:type typeid='2'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='2'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        <li > {dede:type typeid='43'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='43'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        <li > {dede:type typeid='44'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='44'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        <li > {dede:type typeid='3'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='3'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        <li > {dede:type typeid='46'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='46'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        <li > {dede:type typeid='45'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='45'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        <li > {dede:type typeid='4'}<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>{/dede:type}
+          <ul>
+            {dede:channel typeid='4'}
+            <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>       
+      </ul>
+    </div>
+    
+</div>

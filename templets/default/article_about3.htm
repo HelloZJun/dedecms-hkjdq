@@ -1,0 +1,138 @@
+{dede:include filename="head_z.htm"/}
+<!-- 头部分割线 -->
+<div id="zty_0001"></div><div id="zty_0038"></div><div id="zty_0039"></div><div id="zty_0040"></div>
+<div id="zty_0041">
+<div class="doweboke">
+	<div class="inner"><span id="tip2" data-tipso="记忆和不记忆及频率门限值调节旋钮">④</span></div>
+    <div class="inner"><span id="tip1" data-tipso="电源或延时指示, 绿色">①</span></div>
+    <div class="inner"><span id="tip3" data-tipso="F1频率过高故障指示,黄色">②</span></div>
+    <div class="inner"><span id="tip8" data-tipso="F2频率过低故障指示,黄色">③</span></div>
+    <div class="inner"><span id="tip5" data-tipso="频率过高调节旋钮">⑤</span></div>
+    <div class="inner"><span id="tip6" data-tipso="频率过低调节旋钮">⑥</span></div>
+    <div class="inner"><span id="tip7" data-tipso="动作时间调节旋">⑦</span></div>
+</div>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/tipso.min.js"></script>
+<script>
+$(function() {
+	// 1
+	$('#tip1').tipso({
+		useTitle: false
+	});
+	// 2
+	$('#tip2').tipso({
+		useTitle: false,
+		position: 'left'
+	});
+	// 3
+	$('#tip3').tipso({
+		useTitle: false,
+	});
+	// 4
+	$('#tip4').tipso();
+	// 5
+	$('#tip5').tipso({
+		useTitle: false
+	});
+	$('#btn5').on({
+		click: function(e) {
+			if($(this).text() == '显示') {
+				$(this).text('隐藏');
+				$('#tip5').tipso('show');
+			} else {
+				$(this).text('显示');
+				$('#tip5').tipso('hide');
+			}
+			e.preventDefault();
+		}
+	});
+	// 6
+	$('#tip6').tipso({
+		useTitle: false
+	});
+	$('#btn6').on('click', function() {
+		var $val = $(this).prev().val();
+		if($val) {
+			$('#tip6').tipso('update', 'content', $val);
+		}
+	});
+	// 7
+	$('#tip7').tipso({
+		useTitle: false
+	});
+	// 8
+	$('#tip8').tipso({
+		useTitle: false,
+		onBeforeShow: function() {
+			$('#status').html('beforeShow');
+		},
+		onShow: function() {
+			$('#status').html('show');
+		},
+		onHide: function() {
+			$('#status').html('hide');
+		}
+	});
+});
+</script>
+</div>
+
+<div id="zty_0043">
+<script>
+    function toggle(id,exp) {
+        document.getElementById(id).style.display =exp?'block':'none';
+        document.getElementById('a' + id).style.display = exp ? 'none' : 'inline';
+    }
+</script>
+<table width="1164" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="4" align="center"><img src="{dede:global.cfg_templets_skin/}/img/zty003/b.jpg" width="605" height="89" /></td>
+  </tr>
+  <tr>
+    <td colspan="4">
+<div style="text-align:center"><a href="javascript:toggle('detail0',true)" id="adetail1"><img src="{dede:global.cfg_templets_skin/}/img/zty003/1.jpg" /></a></div><br />
+<div id="detail0" style="display:none;"><img src="{dede:global.cfg_templets_skin/}/img/zty003/zty_04.jpg" width="1069" height="421" />
+<div style="text-align:center"><a href="javascript:toggle('detail0')"><img src="{dede:global.cfg_templets_skin/}/img/zty003/2.jpg" /></a></div>
+</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td><img src="{dede:global.cfg_templets_skin/}/img/zty003/b1.jpg" width="291" height="61" /></td>
+    <td><img src="{dede:global.cfg_templets_skin/}/img/zty003/b2.jpg" width="291" height="61" /></td>
+    <td><img src="{dede:global.cfg_templets_skin/}/img/zty003/b3.jpg" width="291" height="61" /></td>
+    <td><img src="{dede:global.cfg_templets_skin/}/img/zty003/b4.jpg" width="291" height="61" /></td>
+  </tr>
+  <tr>
+    <td>
+<div style="text-align:center"><a href="javascript:toggle('detail1',true)" id="adetail1"><img src="{dede:global.cfg_templets_skin/}/img/zty003/1.jpg" /></a></div><br />
+<div id="detail1" style="display:none;width:290px;font-size:14px;color:#fff;">高频整定旋钮采用连续可调的电位器，标识点为：-1、0、+1、+2、+3、+4、+5；表示额定频率的绝对正偏差值。当FUNCTION档位在X1档时，实际整定值==额定频率+旋钮指示，当FUNCTION档位在X2档时，实际整定值==额定频率+旋钮指示*2.
+<div style="text-align:center"><a href="javascript:toggle('detail1')"><img src="{dede:global.cfg_templets_skin/}/img/zty003/2.jpg" /></a></div>
+</div>
+</td>
+    <td>
+<div style="text-align:center"><a href="javascript:toggle('detail2',true)" id="adetail2"><img src="{dede:global.cfg_templets_skin/}/img/zty003/1.jpg" /></a></div><br />
+<div id="detail2" style="display:none;width:290px;font-size:14px;color:#fff;">低频整定旋钮采用连续可调的电位器，标识点为：+1、0、-1、-2、-3、-4、-5；表示额定频率的绝对负偏差值。当FUNCTION档位在X1档时，实际整定值==额定频率+旋钮指示，当FUNCTION档位在X2档时，实际整定值==额定频率+旋钮指示*2.
+<div style="text-align:center"><a href="javascript:toggle('detail2')"><img src="{dede:global.cfg_templets_skin/}/img/zty003/2.jpg" /></a></div>
+</div>
+</td>
+    <td>
+<div style="text-align:center"><a href="javascript:toggle('detail3',true)" id="adetail3"><img src="{dede:global.cfg_templets_skin/}/img/zty003/1.jpg" /></a></div><br />
+<div id="detail3" style="display:none;width:290px;font-size:14px;color:#fff;">动作时间调整旋钮用来设置高频和低频延时动作的延时值，整定范围为：0.1~10S;采用连续可调的电位器，标识点为：0.1、2、4、6、8、10.
+<div style="text-align:center"><a href="javascript:toggle('detail3')"><img src="{dede:global.cfg_templets_skin/}/img/zty003/2.jpg" /></a></div>
+</div>
+</td>
+    <td>
+<div style="text-align:center"><a href="javascript:toggle('detail4',true)" id="adetail4"><img src="{dede:global.cfg_templets_skin/}/img/zty003/1.jpg" /></a></div><br />
+<div id="detail4" style="display:none;width:290px;font-size:14px;color:#fff;">动作时间调整旋钮用来设置高频和低频延时动作的延时值，整定范围为：0.1~10S;采用连续可调的电位器，标识点为：0.1、2、4、6、8、10.
+<div style="text-align:center"><a href="javascript:toggle('detail4')"><img src="{dede:global.cfg_templets_skin/}/img/zty003/2.jpg" /></a></a></div>
+</div>
+</td>
+  </tr>
+</table>
+</div>
+<div id="zty_0044"></div><div id="zty_0045"></div><div id="zty_0046"></div><div id="zty_0047"></div><div id="zty_0048"></div><div id="zty_0049"></div><div id="zty_0050"></div>
+{dede:include filename="foot.htm"/}
+<!-- /footer -->

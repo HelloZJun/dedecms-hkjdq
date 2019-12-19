@@ -1,0 +1,362 @@
+{dede:include filename="head_z.htm"/}
+<!-- 头部分割线 -->
+<div id="zty_0001"></div><div id="zty_0025"></div><div id="zty_0026"></div>
+<div id="zty_0027">
+<table width="1100" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="558"><img src="{dede:global.cfg_templets_skin/}/img/zty002/1.png" width="489" height="427" /></td>
+    <td width="542">
+<div class="dowebok2">
+	<div class="inner"><span id="tip1" data-tipso="用于两端供电线路的同期并网控制、自动重合闸控制、备用电源自投控制回路中，用来检测并网断路器两端电压的频率、相位、压差是否符合双电源并网条件。">适用范围</span></div>
+    <div class="inner"><span id="tip2" data-tipso="继电器功能完全替代老式DT-1、DT-13、BT-1、TQ-100等系列全型号产品，一只产品通过设定适应不同电压配对要求，无需一一对应具体规格，一只通用。">通用性</span></div>
+    <div class="inner"><span id="tip3" data-tipso="继电器采用最新的电子技术设计，壳体只有18mm宽，大小只有一极空开的大小，比原老式壳体缩小近10倍。极大的提高了安装密度！">体积小</span></div>
+    <div class="inner"><span id="tip4" data-tipso="采用国际流行的DIN35mm导轨安装，不用开孔，直接挂接在柜内安装导轨上，10秒即可完成安装。比起老式壳体要面板开孔或柜内打固定孔安装，极大的节省了人工，提高了工作效率，尤其在更换或改造时，极大的体现了方便性和效率。">安装方便</span></div>
+    <div class="inner"><span id="tip5" data-tipso="两侧电源采样采用独立的两只电压互感器，每只互感器原副边隔离耐压2KV以上，保证了各回路间完全电气隔离，解决了老式电磁式同期继电器两个采样绕组绕在同一铁芯上，回路间耐压完全由绕组漆包线的耐压决定的安全隐患！同时，由于互感器完全独立，不存在老式电磁式同期继电器由于两个线圈绕在同一铁芯上产生的电磁干扰！">电气隔离</span></div>
+    <div class="inner"><span id="tip6" data-tipso="用户可根据现场实际需要设定系统两侧电压额定值、相差角度、压差百分比和频差范围，进行精确的合闸条件判断，比老式同期继电器只能整定相差角，其它额定电压，压差和频差需要在出厂前说明更具有现场应用的灵活性。">灵活的现场整定</span></div>
+    <div class="inner"><span id="tip7" data-tipso="由于继电器采用了并网要求的三个判据来判断，比老式同期只判相差角的判据极大的提高了并网条件的可靠性。">可靠性高</span></div>
+    <div class="inner"><span id="tip9" data-tipso="继电器采用跟频算法，使继电器可使用在45-65HZ的范围内，适用全球电网频率。">适用全球电网</span></div>
+    <div class="inner"><span id="tip10" data-tipso="继电器电源采用ABB公司使用的全球最先进的高效环保开关电源，无易损耗元件，不发热，长寿命，保证继电器拥有通电长寿命周期。">更长的寿命</span></div>
+    <div class="inner"><span id="tip11" data-tipso="主控芯片采用工业级ARM，硬件软件滤波冗余，对电网谐波和电压突变有优异的抗干扰功能。
+">优异的抗干扰性能</span></div>
+</div>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/tipso.min.js"></script>
+<script>
+$(function() {
+	// 1
+	$('#tip1').tipso({
+		useTitle: false,
+		position: 'right'
+	});
+	// 2
+	$('#tip2').tipso({
+		useTitle: false,
+		position: 'right'
+	});
+	// 3
+	$('#tip3').tipso({
+		useTitle: false,
+		position: 'right'
+	});
+	// 4
+		$('#tip4').tipso({
+		useTitle: false,
+		position: 'right'
+	});
+	// 5
+	$('#tip5').tipso({
+		useTitle: false,
+		position: 'right'
+	});
+	$('#btn5').on({
+		click: function(e) {
+			if($(this).text() == '显示') {
+				$(this).text('隐藏');
+				$('#tip5').tipso('show');
+			} else {
+				$(this).text('显示');
+				$('#tip5').tipso('hide');
+			}
+			e.preventDefault();
+		}
+	});
+	// 6
+	$('#tip6').tipso({
+		useTitle: false,
+		position: 'right'
+	});
+	$('#btn6').on('click', function() {
+		var $val = $(this).prev().val();
+		if($val) {
+			$('#tip6').tipso('update', 'content', $val);
+		}
+	});
+	// 7
+	$('#tip7').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+	// 9
+	$('#tip9').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+	// 10
+	$('#tip10').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+	// 11
+	$('#tip11').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+	// 12
+	$('#tip12').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+	// 13
+	$('#tip13').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+	// 14
+	$('#tip14').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+		// 15
+	$('#tip15').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+			// 16
+	$('#tip16').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+			// 17
+	$('#tip17').tipso({
+        useTitle: false,
+		position: 'right'
+	});
+			// 18
+	$('#tip18').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 19
+	$('#tip19').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 20
+	$('#tip20').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 21
+	$('#tip21').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 22
+	$('#tip22').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 23
+	$('#tip23').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 24
+	$('#tip24').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 25
+	$('#tip25').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 26
+	$('#tip26').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 27
+	$('#tip27').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 28
+	$('#tip28').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+			// 29
+	$('#tip29').tipso({
+        useTitle: false,
+		position: 'bottom'
+	});
+	// 8
+	$('#tip8').tipso({
+		useTitle: false,
+		onBeforeShow: function() {
+			$('#status').html('beforeShow');
+		},
+		onShow: function() {
+			$('#status').html('show');
+		},
+		onHide: function() {
+			$('#status').html('hide');
+		}
+	});
+});
+</script>
+</td>
+  </tr>
+</table>
+</div>
+<div id="zty_0028">
+<script>
+    function toggle(id,exp) {
+        document.getElementById(id).style.display =exp?'block':'none';
+        document.getElementById('a' + id).style.display = exp ? 'none' : 'inline';
+    }
+</script>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>&nbsp;</td>
+          <td><div class="b4">● 电压档位选择旋钮开关（RANGE）</div><a href="javascript:toggle('detail0',true)" id="adetail0"><img src="{dede:global.cfg_templets_skin/}/img/zty002/3.png" /></a></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+<div id="detail0" style="display:none"><img src="{dede:global.cfg_templets_skin/}/img/zty002/zty_05.jpg" />
+<div style="text-align:right"><a href="javascript:toggle('detail0')"><img src="{dede:global.cfg_templets_skin/}/img/zty002/4.png" /></a></div>
+</div></td>
+        </tr>
+        <tr>
+          <td width="438">&nbsp;</td>
+      <td width="562"><div class="b4">● 角差设定说明（△P）</div><a href="javascript:toggle('detail',true)" id="adetail"><img src="{dede:global.cfg_templets_skin/}/img/zty002/3.png" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+<div id="detail" style="display:none">相位差设定旋钮采用连续可调电位器，全量程对应0-40度角差，刻度标识0、10、20、40；直接显示相位差定值。
+<div style="text-align:right"><a href="javascript:toggle('detail')"><img src="{dede:global.cfg_templets_skin/}/img/zty002/4.png" /></a></div>
+</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><div class="b4">● 压差设定说明（△U）</div><a href="javascript:toggle('detail1',true)" id="adetail1"><img src="{dede:global.cfg_templets_skin/}/img/zty002/3.png" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+<div id="detail1" style="display:none">电压差设定旋钮采用连续可调电位器，全量程对应0%-10%电压差，刻度标识0、1、2、3、4、5、6、7、8、9、10；计算时以档位额定电压（不同时为较大者）为基准，两侧电压差值的绝对值除以档位额定电压的值为压差百分比。电压额定值不同时，先将较小一侧乘以系数补偿到较高档位的对应值再相减。
+<div style="text-align:right"><a href="javascript:toggle('detail1')"><img src="{dede:global.cfg_templets_skin/}/img/zty002/4.png" /></a></div>
+</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><div class="b4">● 频差设定说明（△HZ）</div><a href="javascript:toggle('detail2',true)" id="adetail2"><img src="{dede:global.cfg_templets_skin/}/img/zty002/3.png" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+<div id="detail2" style="display:none">频率差设定旋钮采用连续可调电位器，全量程对应0-0.2HZ频率差，刻度标识0、0.1、0.2；直接显示频率差定值。
+<div style="text-align:right"><a href="javascript:toggle('detail2')"><img src="{dede:global.cfg_templets_skin/}/img/zty002/4.png" /></a></div>
+</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><div class="b4">● 运行灯状态说明（RUN）</div><a href="javascript:toggle('detail3',true)" id="adetail3"><img src="{dede:global.cfg_templets_skin/}/img/zty002/3.png" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+<div id="detail3" style="display:none">运行灯采用绿色，正常运行时秒闪，代表程序正常运行，灭或常亮或闪烁不正常均为继电器内部故障状态。
+<div style="text-align:right"><a href="javascript:toggle('detail3')"><img src="{dede:global.cfg_templets_skin/}/img/zty002/4.png" /></a></div>
+</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><div class="b4">● US灯状态说明</div><a href="javascript:toggle('detail4',true)" id="adetail4"><img src="{dede:global.cfg_templets_skin/}/img/zty002/3.png" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+<div id="detail4" style="display:none">US灯采用黄色，用来指示系统侧电压US的状态，灭表示US没有电压（小于30%）输入，快闪表示输入电压频率异常（不在45-65HZ内），电压过高（大于120%）过低（小于30%），秒闪表示输入电压频率在正常范围内（45-65HZ），电压没有超出过欠压范围，常亮代表，与UF电压达到频差小于设定，压差小于设定，相位差小于设定的状态。
+<div style="text-align:right"><a href="javascript:toggle('detail4')"><img src="{dede:global.cfg_templets_skin/}/img/zty002/4.png" /></a></div>
+</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><div class="b4">● UF灯状态说明</div><a href="javascript:toggle('detail5',true)" id="adetail5"><img src="{dede:global.cfg_templets_skin/}/img/zty002/3.png" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+<div id="detail5" style="display:none">UF灯采用黄色，用来指示发电侧UF的状态，灭表示UF没有电压（小于30%）输入，快闪表示输入电压频率异常（不在45-65HZ内），电压过高（大于120%）过低（小于30%）；秒闪表示输入电压频率在正常范围内（45-65HZ），电压没有超出过欠压范围；常亮代表，与US电压达到频差小于设定，压差小于设定，相位差小于设定的状态。
+<div style="text-align:right"><a href="javascript:toggle('detail5')"><img src="{dede:global.cfg_templets_skin/}/img/zty002/4.png" /></a></div>
+</div></td>
+    </tr>
+  </table>
+</div>
+
+<div id="zty_0030"></div>
+<div id="zty_0031">
+<div class="dowebok3">
+<table width="1100" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="551">&nbsp;</td>
+    <td width="549"><div class="inner"><span id="tip12" data-tipso="继电器只有在压差小于设定，频差小于设定，相位在设定范围内全部满足时动作。">● 主判据</span></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="inner"><span id="tip13" data-tipso="小于额定电压的30%，回路指示灯灭。">● 无压判据</span></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="inner"><span id="tip14" data-tipso="额定电压的70%~120%内进行主逻辑判断。">● 电压正常范围判据</span></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="inner"><span id="tip15" data-tipso="45~65HZ为正常频率范围，只在此范围内进行主逻辑判断。">● 频率正常范围判据</span></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="inner"><span id="tip16" data-tipso="两侧额定电压不同时，低的额定电压要乘以系数变换成与高额定电压相等的值再进行压差计算。如US侧额定电压100V，UF侧定额电压60V，计算时UF侧电压乘以100/60的结果再与US侧的值相减获得压差。">● 不同额定电压换算</span></div></td>
+  </tr>
+</table>
+</div>
+</div>
+<div id="zty_0033"></div>
+<div id="zty_0034">
+<table width="1100" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2" align="center"><img src="{dede:global.cfg_templets_skin/}/img/zty002/zty_11.jpg" width="402" height="158" /></td>
+  </tr>
+  <tr>
+    <td width="45%"><img src="{dede:global.cfg_templets_skin/}/img/zty002/5.png" width="500" height="396" /> </td>
+    <td width="55%"><div id="lib_wwwzzjsnet" class="lib_zzjsnet">
+<script>
+<!--
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var zzjs=document.getElementById("wwwzzjsnet_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  zzjs.style.display=i==cursel?"block":"none";
+ }
+}
+</script>
+<div class="lib_menubox_zzjsnet">
+<ul>
+   <li id="zzjs1" onclick="setTab('zzjs',1,5)" class="hover">调试第一步</li>
+   <li id="zzjs2" onclick="setTab('zzjs',2,5)">调试第二步</li>
+   <li id="zzjs3" onclick="setTab('zzjs',3,5)">调试第三步</li>
+   <li id="zzjs4" onclick="setTab('zzjs',4,5)">调试第四步</li>
+   <li id="zzjs5" onclick="setTab('zzjs',5,6)">调试第五步</li>
+   <li id="zzjs6" onclick="setTab('zzjs',6,6)">调试第六步</li>
+</ul>
+</div>
+ <div class="lib_contentbox_zzjsnet">
+   <div id="wwwzzjsnet_zzjs_1" >继电器加辅助电源，运行灯秒闪，状态灯全灭，继电器触点不动。</div>
+   <div id="wwwzzjsnet_zzjs_2" style="display:none">在US侧缓慢加入电压频率为50HZ，超过30%额定值时，US灯快闪，超过70%额定值时，US灯秒闪，超过120%额定值时，US灯快闪；试完调节US侧电压到100%额定电压，改变频率，低于45HZ高于65HZ时，US灯快闪，在45-65HZ内时秒闪；试完，调回频率到50HZ，US相位角调到0度。</div>
+   <div id="wwwzzjsnet_zzjs_3" style="display:none">在UF侧缓慢加入电压频率为50HZ，相位60度，超过30%额定值时，UF灯快闪，超过70%额定值时，UF灯秒闪，超过120%额定值时，UF灯快闪；试完，调节UF侧电压到100%额定值，改变频率，低于45HZ高于65HZ时，UF灯快闪，在45-65HZ内时秒闪；试完，调回频率到50HZ。</div>
+   <div id="wwwzzjsnet_zzjs_4" style="display:none">将相差、频差、压差全部整定到最大，调节UF电压相位，继电器应该在-40~+40度区间内动作，其它区间不动作。动作时，US灯和UF灯常亮显示。调整相差定值在需要的定值，调节仪器相位，验证动作区间。</div>
+   <div id="wwwzzjsnet_zzjs_5" style="display:none">用仪器模拟并网条件，US侧电压固定在额定值频率50HZ，使UF侧的电压频率稍高或稍低于US侧频率，当频差范围在设定范围内时，继电器做周期性动作，动作范围为设定的相差角范围。当频差超出设定范围时，继电器闭锁不再动作。调节频差定值在需要的值，验证频差闭锁边界。</div>
+   <div id="wwwzzjsnet_zzjs_6" style="display:none">使继电器输入在频率范围内，继电器周期动作，调节UF侧电压高于或低于额定值，当压差大于设定值时，继电器闭锁不再动作。调节压差定值在需要的值，验证压差闭锁边界。</div>
+ </div>
+</div></td>
+  </tr>
+</table>
+</div>
+<div id="zty_0035"></div><div id="zty_0036"></div><div id="zty_0037"></div>
+{dede:include filename="foot.htm"/}
+<!-- /footer -->

@@ -1,0 +1,52 @@
+{dede:include filename="head.htm"/}
+<!-- 头部分割线 -->
+<!--内容区开始-->
+<div class="main">
+  <div class="container">
+    <div class="main_top"><span>当前位置：</span>
+      <ul>
+        <li>{dede:field name='position'/}</li>
+      </ul>
+      <div class="span2"></div>
+    </div>
+    
+    <div id="right">
+      <div id="right_top">
+        <h3>寿险保障</h3>
+      </div>
+      <div id="right_con">
+        <div class="productTitle">{dede:field.title/}</div>
+        <div class="productBuy"></div>
+        <div class="title"><span>详细信息</span></div>
+        <div class="productDesc">
+          <div style="text-align:center;"> {dede:field.body/}<br />
+          </div>
+        </div>
+        <div class="pageUpDown clear">{dede:prenext get='pre'/}<br  />
+          {dede:prenext get='next'/}</div>
+        <div class="title"><span>相关产品</span></div>
+        <div class="blank"></div>
+        <div class="row">
+          <div class="productList"> {dede:arclist typeid='1' row='4' titlelen='50' orderby='pubdate'}
+            <div class="pro_list wow fadeInUp" data-wow-delay=".2s">
+              <div class="pro_item pro_list2">
+                <div class="pro_item_img" style="background-image:url([field:picname/]);"></div>
+                <div class="pro_item_title">
+                  <h3><a href='[field:arcurl/]'>[field:title/]</a></h3>
+                  <h4>[field:description function="cn_substr(@me,80)"/]...</h4>
+                </div>
+              </div>
+            </div>
+            {/dede:arclist} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--内容区结束-->
+<div class="clear"></div>
+
+{dede:include filename="foot.htm"/}
+<!-- /footer -->
+</body>
+</html>

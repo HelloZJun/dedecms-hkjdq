@@ -1,0 +1,66 @@
+/*
+|---------------------------------------------------------------
+|	Login Style
+|---------------------------------------------------------------
+|	File:login.css
+|	Creation Date:2011-02-18
+|	Last Modified:2011-02-18
+|	Author:networker<networker@itwoo.org>
+|	From:DesDev	INC.
+|---------------------------------------------------------------
+*/
+body{
+	background-color:#55b6f4;
+	background-image: url(../images/login.jpg);
+	background-position: center top;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin: auto;
+}#login-box{
+	border:5px solid #eee;
+	background:url(../images/login-top.jpg) #fff top center no-repeat;
+	width:590px;
+	margin-top: 200px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}.login-top{height:48px;line-height:48px;text-align:right;}
+.login-top a{color:#666;}
+.login-top a:hover{color:#333;text-decoration:underline;}
+.safe-tips{border:1px solid #F2DD8C;background:url(../images/safe-tips.gif) 10px #FFFFCC no-repeat;color:#666;height:35px;line-height:35px;margin-top:5px;padding-left:30px;zoom:1;overflow:hidden;}
+
+.login-main{background:url(../images/login-bg.jpg) top right no-repeat;height:160px;margin-top:10px;}
+.login-main dl{width:300px;}
+.login-main dl dt,.login-main dl dd{float:left;height:30px;line-height:30px;display:inline-block;margin-top:5px;}
+.login-main dl dt{width:90px;text-align:right;font-size:14px;font-weight:bold;color:#333;padding-right:5px;
+}.login-main dl dd{}.login-main dl dd input#vdcode{width:50px;margin-right:5px;}
+.login-main  .login-btn{background:url(../images/login-btn.jpg) no-repeat;width:84px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:bold;color:#fff;border:none;margin-top:5px;cursor:pointer;}
+
+.login-power{
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	color:#fff;
+	margin-top:15px;
+	width: 1002px;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+.login-power strong{color:#FFFFFF;}
+.login-power  a{margin:0 3px;color:#fff;}
+.login-power  a:hover{
+	text-decoration:underline;
+	color:#FF0000;
+}
+.dede-iframe{margin:0 auto;width:640px;}
+
+.dede-ad{border:5px solid #eee;background-color:#fff;width:630px;margin:0 auto;}
+.dede-ad ul{padding:10px 0 10px 3px;overflow:hidden;zoom:1;}
+.dede-ad ul li{float:left;display:inline;width:120px;height:60px;margin-left:4px;}
+.dede-ad ul li img{width:120px;height:60px;}

@@ -1,0 +1,41 @@
+{dede:include filename="head.htm"/}
+<!-- 头部分割线 -->
+<!--内容区开始-->
+<div class="main">
+  <div class="container">
+    <div class="main_top"><span>当前位置：</span>
+      <ul>
+        <li>{dede:field name='position'/}</li>
+      </ul>
+      <div class="span2"></div>
+    </div>
+    
+    <div id="right">
+      <div id="right_top">
+        <h3><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></h3>
+      </div>
+      <div id="right_con">
+        <div class="articleTitle">{dede:field.title/}</div>
+        <div class="articleAuthor"><span>来源：{dede:field.source/}</span><span>作者：{dede:field.writer/}</span><span>日期：{dede:field.pubdate function="MyDate('Y-m-d ',@me)"/}</span><span>浏览：<font class="countnum"><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></font></span></div>
+        <div class="articleInfo"> {dede:field.body/} </div>
+        <div class="pageUpDown"> {dede:prenext get='pre'/}<br/>
+          {dede:prenext get='next'/}</div>
+        <div class="title"><span>相关文章</span></div>
+        <div class="articleList">
+          <ul>
+            {dede:arclist typeid='14' row='5' titlelen='50' orderby='pubdate'}
+            <li><span class='time'>[field:pubdate function="MyDate('Y/m/d',@me)"/]</span><a href='[field:arcurl/]' title='[field:title/]'>[field:title/]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--内容区结束-->
+<div class="clear"></div>
+
+{dede:include filename="foot.htm"/}
+<!-- /footer -->
+</body>
+</html>

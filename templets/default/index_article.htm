@@ -1,0 +1,30 @@
+<!--头部开始--> 
+{dede:include filename="head.htm"/}
+<div class="clear"></div>
+<div id="banner"></div>
+<div class="clear"></div>
+<!--内容区开始-->
+<div class="main">
+  <div class="container">
+    <div class="main_top"><span>当前位置：</span>
+      <ul>
+        <li>{dede:field name='position'/}</li>
+      </ul>
+    </div>
+    
+    {dede:include filename="left.htm"/}
+        
+    <div id="right">
+      <div id="right_top">
+        <h3><a href='{dede:field name='typeurl'/}'>{dede:field.seotitle /}</a></h3>
+      </div>
+      <div id="right_con"> {dede:field.content/} </div>
+    </div>
+  </div>
+</div>
+<!--内容区结束-->
+<div class="clear"></div>
+{dede:include filename="foot.htm"/} 
+<!--版权区结束-->
+</body>
+</html>

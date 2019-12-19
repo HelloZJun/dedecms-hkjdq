@@ -1,0 +1,66 @@
+<!--头部开始--> 
+{dede:include filename="head.htm"/}
+<div class="clear"></div>
+<div id="banner"></div>
+<div class="clear"></div>
+<!--内容区开始-->
+<div class="main">
+  <div class="container">
+    <div class="main_top"><span>当前位置：</span>
+      <ul>
+        <li>{dede:field name='position'/}</li>
+      </ul>
+    </div>
+    
+    {dede:include filename="left.htm"/}
+        
+    <div id="right">
+      <div id="right_top">
+        <h3><a href='{dede:field name='typeurl'/}'>{dede:field.seotitle /}</a></h3>
+      </div>
+      <div id="right_con"> {dede:field.content/} 
+      
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+<table style="width:97%;" cellpadding="0" cellspacing="1">
+<tr>
+  <td align="right" valign="top">您的姓名：</td>
+  <td><input type='text' name='name' id='name' style='width:250px'  class='intxt' value='' />
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top">您的手机号：</td>
+  <td><input type='text' name='tel' id='tel' style='width:250px'  class='intxt' value='' />
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top">您的邮箱：</td>
+  <td><input type='text' name='email' id='email' style='width:250px'  class='intxt' value='' />
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top">备注：</td>
+  <td><textarea name='note' id='note' style='width:90%;height:80'></textarea>
+</td>
+</tr>
+<input type="hidden" name="dede_fields" value="name,text;tel,text;email,text;note,multitext" />
+<input type="hidden" name="dede_fieldshash" value="d2190796cca6c110282fe1556cb2e67b" /></table>
+<div align='center' style='height:30px;padding-top:10px;'>
+<input type="submit" name="submit" value="提 交" class='coolbg' />
+&nbsp;
+<input type="reset" name="reset" value="重 置" class='coolbg' />
+</div>
+</form>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!--内容区结束-->
+<div class="clear"></div>
+{dede:include filename="foot.htm"/} 
+<!--版权区结束-->
+</body>
+</html>

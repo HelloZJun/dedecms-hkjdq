@@ -1,0 +1,47 @@
+{dede:include filename="head.htm"/}
+
+<!-- 头部分割线 -->
+<div class="clear"></div>
+<div id="banner"></div>
+<div class="clear"></div>
+<!--内容区开始-->
+<div class="main">
+  <div class="container">
+    <div class="main_top"><span>当前位置：</span>
+      <ul>
+        <li>{dede:field name='position'/}</li>
+      </ul>
+      <div class="span2"></div>
+    </div>
+    {dede:include filename="left.htm"/}
+    <div id="right">
+      <div id="right_top">
+        <h3><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></h3>
+      </div>
+      <div id="right_con">
+        <div class="articleList">
+          <ul>
+            {dede:list pagesize ='6'}
+            <div class="art_list wow fadeInUp">
+              <div class="art_img"><a href='[field:arcurl/]' target="_blank"><img src='[field:picname/]'/></a></div>
+              <div class="art_right">
+                <div class="art_title"><a href='[field:arcurl/]' >[field:title/]</a></div>
+                <div class="art_author"><span>来源：[field:source/]</span><span>作者：[field:writer/]</span> <span>日期：[field:pubdate function="MyDate('Y-m-d',@me)"/]</span></div>
+                <div class="art_des">[field:description function="cn_substr(@me,300)"/]...</div>
+                <div class='art_more'><a href='[field:arcurl/]' target="_blank">查看更多>></a></div>
+              </div>
+            </div>
+            {/dede:list}
+          </ul>
+        </div>
+        <div class="blank clear"></div>
+        <div class="pages"> {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/} </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--内容区结束-->
+<div class="clear"></div>
+
+{dede:include filename="foot.htm"/}
+<!-- /footer -->
