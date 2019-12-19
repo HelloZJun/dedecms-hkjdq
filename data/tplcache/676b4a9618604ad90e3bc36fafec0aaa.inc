@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" class="d1" style="background:url([field:litpic/]) center no-repeat;"></a>

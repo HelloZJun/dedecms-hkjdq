@@ -1,0 +1,1 @@
+<li>[field:textlink/][field:description function="cn_substr(@me,140)"/]... </li>

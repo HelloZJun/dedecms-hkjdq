@@ -1,0 +1,1 @@
+<a class="more border-main" href="[field:typelink/]" >更多观点</a>

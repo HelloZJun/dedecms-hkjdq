@@ -1,0 +1,1 @@
+<a href="[field:typelink/]"><span class="icon-globe"></span>²úÆ·</a>
